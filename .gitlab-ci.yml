@@ -1,0 +1,22 @@
+stages:
+  - test
+
+backend-test:
+  stage: test
+  image: python:3.13-slim
+  script:
+    - cd backend
+    - pip install -r requirements.txt
+    - python -m pytest -q
+
+frontend-build:
+  stage: test
+  image: node:24-alpine
+  script:
+    - cd frontend
+    - npm install --no-audit --no-fund
+    - npm run build
+  artifacts:
+    paths:
+      - frontend/dist/
+    expire_in: 7 days

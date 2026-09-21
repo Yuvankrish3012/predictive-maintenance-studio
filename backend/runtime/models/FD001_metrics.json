@@ -1,0 +1,154 @@
+{
+  "dataset": "FD001",
+  "status": "completed",
+  "training_status": "completed",
+  "training_completed": true,
+  "message": "FD001 training completed successfully. XGBoost model trained and final test evaluation generated.",
+  "train_engines": 100,
+  "test_engines": 100,
+  "train_rows": 20631,
+  "test_rows": 13096,
+  "feature_count": 49,
+  "feature_importance": [
+    {
+      "feature": "sensor_4_roll_mean",
+      "importance": 0.48270702362060547,
+      "gain": 0.48270702362060547,
+      "percentage": 48.2706991561649
+    },
+    {
+      "feature": "sensor_11_roll_mean",
+      "importance": 0.17776186764240265,
+      "gain": 0.17776186764240265,
+      "percentage": 17.776185583635947
+    },
+    {
+      "feature": "sensor_15_roll_mean",
+      "importance": 0.08009827882051468,
+      "gain": 0.08009827882051468,
+      "percentage": 8.009827350079256
+    },
+    {
+      "feature": "engine_age",
+      "importance": 0.023790743201971054,
+      "gain": 0.023790743201971054,
+      "percentage": 2.379074162191035
+    },
+    {
+      "feature": "cycle",
+      "importance": 0.02339506521821022,
+      "gain": 0.02339506521821022,
+      "percentage": 2.339506366442844
+    },
+    {
+      "feature": "sensor_9_roll_mean",
+      "importance": 0.021477535367012024,
+      "gain": 0.021477535367012024,
+      "percentage": 2.147753394058287
+    },
+    {
+      "feature": "sensor_2_roll_mean",
+      "importance": 0.014855384826660156,
+      "gain": 0.014855384826660156,
+      "percentage": 1.4855383840040715
+    },
+    {
+      "feature": "sensor_14_roll_mean",
+      "importance": 0.013493801467120647,
+      "gain": 0.013493801467120647,
+      "percentage": 1.3493800570930679
+    },
+    {
+      "feature": "sensor_3_roll_mean",
+      "importance": 0.013323663733899593,
+      "gain": 0.013323663733899593,
+      "percentage": 1.332366284900931
+    },
+    {
+      "feature": "sensor_7_roll_mean",
+      "importance": 0.011464270763099194,
+      "gain": 0.011464270763099194,
+      "percentage": 1.1464270001700376
+    },
+    {
+      "feature": "sensor_17_roll_mean",
+      "importance": 0.008570006117224693,
+      "gain": 0.008570006117224693,
+      "percentage": 0.8570005548048278
+    },
+    {
+      "feature": "sensor_9",
+      "importance": 0.007915464229881763,
+      "gain": 0.007915464229881763,
+      "percentage": 0.7915463704176707
+    },
+    {
+      "feature": "sensor_12_roll_mean",
+      "importance": 0.007685381453484297,
+      "gain": 0.007685381453484297,
+      "percentage": 0.7685380943060174
+    },
+    {
+      "feature": "sensor_21_roll_mean",
+      "importance": 0.007607245817780495,
+      "gain": 0.007607245817780495,
+      "percentage": 0.7607245312545746
+    },
+    {
+      "feature": "sensor_13_roll_mean",
+      "importance": 0.007537763565778732,
+      "gain": 0.007537763565778732,
+      "percentage": 0.7537763065158642
+    },
+    {
+      "feature": "sensor_8_roll_mean",
+      "importance": 0.006670441012829542,
+      "gain": 0.006670441012829542,
+      "percentage": 0.6670440569812625
+    },
+    {
+      "feature": "sensor_20_roll_mean",
+      "importance": 0.006351804826408625,
+      "gain": 0.006351804826408625,
+      "percentage": 0.6351804404553909
+    },
+    {
+      "feature": "sensor_7_roll_std",
+      "importance": 0.004625116474926472,
+      "gain": 0.004625116474926472,
+      "percentage": 0.4625116167749654
+    },
+    {
+      "feature": "sensor_14",
+      "importance": 0.004025560338050127,
+      "gain": 0.004025560338050127,
+      "percentage": 0.4025560070692792
+    },
+    {
+      "feature": "sensor_20_roll_std",
+      "importance": 0.003760170890018344,
+      "gain": 0.003760170890018344,
+      "percentage": 0.37601706402868323
+    }
+  ],
+  "feature_importance_type": "XGBoost gain importance",
+  "validation": {
+    "train_units": 80,
+    "validation_units": 20,
+    "baseline": {
+      "mae": 36.929802663876686,
+      "rmse": 41.72082538935907,
+      "nasa_score": 1285855.8101210925
+    },
+    "xgboost": {
+      "mae": 10.305117722657448,
+      "rmse": 15.572255992989898,
+      "nasa_score": 22091.288717213738
+    }
+  },
+  "test_evaluation": {
+    "mae": 14.83186644077301,
+    "rmse": 19.870442973698815,
+    "nasa_score": 724.183247835536
+  }
+}
